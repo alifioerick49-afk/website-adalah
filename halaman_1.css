@@ -1,0 +1,306 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 18px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffc4dc, #ff69b4, #ffb6d9);
+  color: #7a2048;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px 25px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 20px 50px #9d245533;
+  animation: muncul 0.8s ease;
+}
+
+.heart {
+  display: inline-block;
+  font-size: 90px;
+  margin-bottom: 22px;
+  filter: drop-shadow(0 9px 8px #e7548090);
+  animation: detak 1.5s infinite;
+}
+
+.small {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d16a94;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #7a2048;
+}
+
+.intro {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #966078;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(120deg, #ff69a6, #ed3283);
+  box-shadow: 0 8px 20px #f05a9955;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px #f05a9970;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #bd7794;
+}
+
+.message-card {
+  line-height: 1.8;
+}
+
+.message {
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 25px 0;
+  color: #824660;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #ef5796;
+  font-size: 29px;
+}
+
+.signature {
+  margin-top: 18px;
+  font-style: italic;
+  color: #a65a7b;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 25px;
+  border: 1px solid #f3a2c5;
+  border-radius: 30px;
+  color: #d94b88;
+  text-decoration: none;
+}
+
+body:has(.lockscreen) {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 25px 18px;
+  background: linear-gradient(135deg, #ffc4dc, #ff69b4, #ffb6d9);
+}
+
+.lockscreen {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  padding: 65px 22px 28px;
+  text-align: center;
+  border: 1px solid #ffffffa8;
+  border-radius: 30px;
+  background: #ffffff70;
+  box-shadow: 0 20px 50px #9d245533;
+  backdrop-filter: blur(12px);
+  animation: muncul 0.8s ease;
+}
+
+.top-label {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #b87996;
+}
+
+.lock-heart {
+  font-size: 48px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 5px 6px #e7548090);
+  animation: detak 1.5s infinite;
+}
+
+.lock-date {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  color: #966078;
+}
+
+#clock {
+  font-size: 48px;
+  margin-bottom: 22px;
+  color: #7a2048;
+}
+
+.lock-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lock-subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #966078;
+}
+
+.password-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 12px;
+}
+
+.password-dots span {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border: 1.5px solid #d94b88;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.password-dots span.filled {
+  background: #d94b88;
+}
+
+#error {
+  min-height: 18px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #c2185b;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 65px);
+  justify-content: center;
+  gap: 12px;
+  margin: 15px auto 25px;
+}
+
+.keypad button {
+  width: 65px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  background: #ffffffb8;
+  color: #7a2048;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px #9d24551a;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.keypad button:active {
+  transform: scale(0.92);
+  background: #ffc4dc;
+}
+
+.keypad button.special {
+  background: #fce1ed;
+}
+
+.bottom-note {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #b87996;
+}
+
+@keyframes detak {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 35px 22px;
+  }
+
+  body:has(.card) h1 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 17px;
+  }
+
+  .heart {
+    font-size: 80px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  .lockscreen {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .keypad {
+    grid-template-columns: repeat(3, 58px);
+    gap: 10px;
+  }
+
+  .keypad button {
+    width: 58px;
+    height: 48px;
+  }
+}

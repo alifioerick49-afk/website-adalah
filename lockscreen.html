@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock My Heart 💗</title>
+  <link rel="stylesheet" href="./halaman_1.css">
+</head>
+<body>
+
+  <main class="lockscreen">
+
+
+    <div class="lock-heart">🤍</div>
+
+    <p class="lock-date" id="date">MONDAY, 17 OCTOBER</p>
+    <h1 id="clock">00:00</h1>
+
+    <p class="lock-title">guess the password</p>
+
+    <p class="lock-subtitle">
+      Password-nya tuh ultah aku, coba tebak 😏
+    </p>
+
+    <div class="password-dots">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <p id="error"></p>
+
+    <div class="keypad">
+      <button type="button" onclick="pressKey('1')">1</button>
+      <button type="button" onclick="pressKey('2')">2</button>
+      <button type="button" onclick="pressKey('3')">3</button>
+
+      <button type="button" onclick="pressKey('4')">4</button>
+      <button type="button" onclick="pressKey('5')">5</button>
+      <button type="button" onclick="pressKey('6')">6</button>
+
+      <button type="button" onclick="pressKey('7')">7</button>
+      <button type="button" onclick="pressKey('8')">8</button>
+      <button type="button" onclick="pressKey('9')">9</button>
+
+      <button type="button" class="special"
+        onclick="clearPassword()">⌫</button>
+      <button type="button" onclick="pressKey('0')">0</button>
+      <button type="button" class="special"
+        onclick="checkPassword()">♡</button>
+    </div>
+
+    <p class="bottom-note">hayoo apa passwordnya 🤭</p>
+
+  </main>
+
+  <script src="./lock.js"></script>
+</body>
+</html>
